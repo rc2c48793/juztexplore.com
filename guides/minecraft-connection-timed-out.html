@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>How to Fix "Connection Timed Out" in Minecraft — 2026 Guide | JuztExplore</title>
+  <meta name="description" content="Fix the Minecraft Connection Timed Out error. Step-by-step guide to resolve firewall, Java, and network issues preventing multiplayer access.">
+  <meta name="robots" content="index, follow">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Outfit:wght@600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="icon" type="image/png" href="/favicon.png">
+</head>
+<body>
+  <header class="header" id="header">
+    <div class="container header__inner">
+      <a href="../index.html" class="header__logo"><img src="/logo.png" alt="JuztExplore"></a>
+      <nav class="header__nav" id="main-nav"><a href="../index.html">Home</a><a href="../about.html">About</a><a href="../contact.html">Contact</a><a href="../privacy-policy.html">Privacy</a><a href="../terms.html">Terms</a></nav>
+      <button class="header__menu-toggle" id="menu-toggle" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+    </div>
+  </header>
+
+  <section class="guide-hero">
+    <div class="container">
+      <div class="guide-hero__breadcrumb"><a href="../index.html">Home</a> <span>›</span> <a href="../index.html">Minecraft</a> <span>›</span> <span>Connection Timed Out</span></div>
+      <div class="guide-hero__meta"><span class="badge">Minecraft</span><span class="badge badge--danger">Network Error</span><span class="badge badge--success">✓ Verified Fix</span></div>
+      <h1 class="guide-hero__title">How to Fix "Connection Timed Out" in Minecraft — <span class="text-gradient">2026 Guide</span></h1>
+      <div class="guide-hero__quick-fix">
+        <div class="guide-hero__quick-fix-title">⚡ Quick Fix</div>
+        <p><strong>Allow Java through your Windows Firewall.</strong> Go to Control Panel → Windows Defender Firewall → Allow an app → find "Java(TM) Platform SE binary" and enable both Private and Public checkboxes.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="container">
+    <div class="guide-layout">
+      <article class="guide-content">
+        <h2>Why Does Minecraft Show "Connection Timed Out"?</h2>
+        <p>The "Connection Timed Out" error occurs when <strong>your Minecraft client cannot establish a connection with the server</strong> within the allowed time limit. Common causes include firewall blocking Java, incorrect server address, server being offline, ISP restrictions, or outdated Java installations.</p>
+
+        <h2>Step-by-Step Fix</h2>
+
+        <div class="step-block">
+          <div class="step-block__number">1</div>
+          <h3 class="step-block__title">Check if the Server is Online</h3>
+          <p class="step-block__text">Before troubleshooting your system, verify the server is actually running. Ask the server owner, check the server's Discord, or use a site like <strong>mcsrvstat.us</strong> to ping the server address.</p>
+        </div>
+
+        <div class="step-block">
+          <div class="step-block__number">2</div>
+          <h3 class="step-block__title">Allow Java Through Windows Firewall</h3>
+          <p class="step-block__text">Windows Firewall often blocks Java connections silently:</p>
+          <ol style="margin-top:0.75rem;padding-left:1.25rem;">
+            <li>Open <strong>Control Panel → Windows Defender Firewall</strong></li>
+            <li>Click <strong>"Allow an app or feature through Windows Defender Firewall"</strong></li>
+            <li>Click <strong>"Change settings"</strong></li>
+            <li>Find <strong>"Java(TM) Platform SE binary"</strong> — check both <strong>Private</strong> and <strong>Public</strong></li>
+            <li>If Java isn't listed, click <strong>"Allow another app"</strong> and browse to your Java installation</li>
+          </ol>
+        </div>
+
+        <div class="step-block">
+          <div class="step-block__number">3</div>
+          <h3 class="step-block__title">Verify the Server Address and Port</h3>
+          <p class="step-block__text">Double-check the server IP address and port. The default Minecraft port is <code style="background:rgba(0,0,0,0.3);padding:2px 6px;border-radius:4px;font-family:var(--font-mono);font-size:0.85rem;">25565</code>. Make sure there are no typos, extra spaces, or wrong port numbers in your server address field.</p>
+        </div>
+
+        <div class="step-block">
+          <div class="step-block__number">4</div>
+          <h3 class="step-block__title">Flush DNS and Reset Network</h3>
+          <p class="step-block__text">Cached DNS entries can cause connection issues. Open <strong>Command Prompt as Administrator</strong> and run:</p>
+          <div class="step-block__code">ipconfig /flushdns<br>ipconfig /release<br>ipconfig /renew<br>netsh winsock reset</div>
+          <p class="step-block__text" style="margin-top:0.75rem;">Restart your PC after running these commands, then try connecting to the server again.</p>
+        </div>
+
+        <div class="step-block">
+          <div class="step-block__number">5</div>
+          <h3 class="step-block__title">Update Java</h3>
+          <p class="step-block__text">Outdated Java versions can cause compatibility issues. Download the latest Java from <strong>java.com</strong> or <strong>adoptium.net</strong> (for OpenJDK). Restart Minecraft after updating.</p>
+        </div>
+
+        <div class="pro-tip">
+          <div class="pro-tip__title">💎 Pro Tip</div>
+          <p>If you frequently experience connection issues, consider switching your DNS to <strong>Google DNS (8.8.8.8 / 8.8.4.4)</strong> or <strong>Cloudflare DNS (1.1.1.1)</strong>. These are faster and more reliable than most ISP DNS servers. Additionally, using a <strong>wired Ethernet connection</strong> instead of Wi-Fi can dramatically reduce packet loss and connection timeouts for multiplayer gaming.</p>
+        </div>
+      </article>
+
+      <aside class="guide-sidebar">
+        <div class="sidebar-card">
+          <h3 class="sidebar-card__title">🖥️ Minecraft System Requirements</h3>
+          <table class="specs-table">
+            <tr><td colspan="2" class="specs-table__heading">Minimum (Java Edition)</td></tr>
+            <tr><th>OS</th><td>Windows 7+ (64-bit)</td></tr>
+            <tr><th>CPU</th><td>Intel Core i3-3210 or AMD A8-7600</td></tr>
+            <tr><th>GPU</th><td>Intel HD 4000 / AMD Radeon R5</td></tr>
+            <tr><th>RAM</th><td>4 GB</td></tr>
+            <tr><td colspan="2" class="specs-table__heading">Recommended</td></tr>
+            <tr><th>CPU</th><td>Intel i5-4690 / AMD A10-7800</td></tr>
+            <tr><th>GPU</th><td>NVIDIA GTX 700 / AMD RX 200</td></tr>
+            <tr><th>RAM</th><td>8 GB</td></tr>
+          </table>
+        </div>
+        <div class="sidebar-card">
+          <h3 class="sidebar-card__title">📋 Article Info</h3>
+          <table class="specs-table">
+            <tr><th>Published</th><td>February 28, 2026</td></tr>
+            <tr><th>Verified</th><td style="color:var(--success);">✓ Community Tested</td></tr>
+            <tr><th>Difficulty</th><td>Beginner</td></tr>
+            <tr><th>Time</th><td>~5 minutes</td></tr>
+          </table>
+        </div>
+      </aside>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand"><div class="footer__brand-logo"><a href="/"><img src="/logo.png" alt="JuztExplore"></a></div><p class="footer__brand-text">Your go-to resource for gaming troubleshooting guides.</p></div>
+        <div><h4 class="footer__heading">Quick Links</h4><ul class="footer__links"><li><a href="../index.html">Home</a></li><li><a href="../about.html">About Us</a></li><li><a href="../contact.html">Contact</a></li></ul></div>
+        <div><h4 class="footer__heading">Legal</h4><ul class="footer__links"><li><a href="../privacy-policy.html">Privacy Policy</a></li><li><a href="../terms.html">Terms</a></li></ul></div>
+        <div></div>
+      </div>
+      <div class="footer__bottom"><span>&copy; 2026 JuztExplore. All rights reserved.</span></div>
+      <p class="footer__disclaimer"><strong>Disclaimer:</strong> JuztExplore is an independent technical resource. All trademarks are the property of their respective owners.</p>
+    </div>
+  </footer>
+  <script src="../js/main.js"></script>
+</body>
+</html>

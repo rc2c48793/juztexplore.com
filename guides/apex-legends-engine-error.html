@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>How to Fix Engine Error 0x887A0006 in Apex Legends — 2026 Guide | JuztExplore</title>
+  <meta name="description" content="Fix Apex Legends Engine Error 0x887A0006 (DXGI_ERROR_DEVICE_REMOVED). Step-by-step GPU driver and settings fixes.">
+  <meta name="robots" content="index, follow">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Outfit:wght@600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="icon" type="image/png" href="/favicon.png">
+</head>
+<body>
+  <header class="header" id="header">
+    <div class="container header__inner">
+      <a href="../index.html" class="header__logo"><img src="/logo.png" alt="JuztExplore"></a>
+      <nav class="header__nav" id="main-nav"><a href="../index.html">Home</a><a href="../about.html">About</a><a href="../contact.html">Contact</a><a href="../privacy-policy.html">Privacy</a><a href="../terms.html">Terms</a></nav>
+      <button class="header__menu-toggle" id="menu-toggle" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+    </div>
+  </header>
+
+  <section class="guide-hero">
+    <div class="container">
+      <div class="guide-hero__breadcrumb"><a href="../index.html">Home</a> <span>›</span> <a href="../index.html">Apex Legends</a> <span>›</span> <span>Engine Error 0x887A0006</span></div>
+      <div class="guide-hero__meta"><span class="badge">Apex Legends</span><span class="badge badge--danger">Engine Error</span><span class="badge badge--success">✓ Verified Fix</span></div>
+      <h1 class="guide-hero__title">How to Fix Engine Error 0x887A0006 in Apex Legends — <span class="text-gradient">2026 Guide</span></h1>
+      <div class="guide-hero__quick-fix">
+        <div class="guide-hero__quick-fix-title">⚡ Quick Fix</div>
+        <p><strong>Perform a clean GPU driver install</strong> using DDU (Display Driver Uninstaller) in Safe Mode, then install the latest driver from NVIDIA or AMD. This resolves the DXGI_ERROR_DEVICE_REMOVED for most players.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="container">
+    <div class="guide-layout">
+      <article class="guide-content">
+        <h2>What Causes Engine Error 0x887A0006?</h2>
+        <p>This error, also known as <strong>DXGI_ERROR_DEVICE_REMOVED</strong>, means your GPU was disconnected from the DirectX pipeline during gameplay. It's typically caused by <strong>unstable GPU drivers, overclocking, overheating, or insufficient power delivery</strong> to the graphics card.</p>
+
+        <h2>Step-by-Step Fix</h2>
+
+        <div class="step-block">
+          <div class="step-block__number">1</div>
+          <h3 class="step-block__title">Clean Install GPU Drivers with DDU</h3>
+          <p class="step-block__text">A regular driver update sometimes doesn't remove old corrupted files. Use <strong>DDU (Display Driver Uninstaller)</strong> for a thorough clean:</p>
+          <ol style="margin-top:0.75rem;padding-left:1.25rem;">
+            <li>Download DDU from <strong>guru3d.com</strong></li>
+            <li>Boot into <strong>Safe Mode</strong> (Settings → Recovery → Restart Now → Troubleshoot → Advanced → Startup Settings)</li>
+            <li>Run DDU and select <strong>"Clean and restart"</strong></li>
+            <li>After reboot, install the <strong>latest GPU driver</strong> from NVIDIA or AMD</li>
+          </ol>
+        </div>
+
+        <div class="step-block">
+          <div class="step-block__number">2</div>
+          <h3 class="step-block__title">Remove GPU Overclock</h3>
+          <p class="step-block__text">If you're running an overclock via MSI Afterburner or EVGA Precision, <strong>reset to stock clocks</strong>. Even factory-overclocked GPUs can trigger this error. Try <strong>underclocking the GPU by 50–100 MHz</strong> as a stability test.</p>
+        </div>
+
+        <div class="step-block">
+          <div class="step-block__number">3</div>
+          <h3 class="step-block__title">Repair Apex Legends Game Files</h3>
+          <p class="step-block__text">In <strong>Steam:</strong> Right-click Apex Legends → Properties → Local Files → Verify Integrity of Game Files. In <strong>EA App:</strong> My Collection → Apex Legends → Manage → Repair.</p>
+        </div>
+
+        <div class="step-block">
+          <div class="step-block__number">4</div>
+          <h3 class="step-block__title">Increase TDR Timeout in Registry</h3>
+          <p class="step-block__text">Windows may be terminating the GPU process too quickly. Increase the Timeout Detection and Recovery (TDR) delay:</p>
+          <div class="step-block__code">HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\GraphicsDrivers<br>Add DWORD (32-bit): TdrDelay = 10</div>
+          <p class="step-block__text" style="margin-top:0.75rem;">Restart your PC after making this change.</p>
+        </div>
+
+        <div class="step-block">
+          <div class="step-block__number">5</div>
+          <h3 class="step-block__title">Check GPU Temperatures and Power</h3>
+          <p class="step-block__text">Use <strong>HWMonitor</strong> or <strong>GPU-Z</strong> to check GPU temperatures during gameplay. If temps exceed 85°C, your GPU may be thermal throttling and crashing. Also check that your <strong>PSU wattage</strong> is sufficient for your GPU — underpowered systems frequently trigger this error.</p>
+        </div>
+
+        <div class="pro-tip">
+          <div class="pro-tip__title">💎 Pro Tip</div>
+          <p>If this error keeps coming back despite all fixes, your GPU may be developing hardware issues. Run <strong>FurMark</strong> for 15 minutes — if the error occurs during a stress test, the GPU itself may be failing. In this case, consider a <strong>GPU upgrade</strong>. Modern GPUs like the NVIDIA RTX 4060 or AMD RX 7600 offer excellent 1080p performance and stability at competitive prices.</p>
+        </div>
+      </article>
+
+      <aside class="guide-sidebar">
+        <div class="sidebar-card">
+          <h3 class="sidebar-card__title">🖥️ Apex Legends System Requirements</h3>
+          <table class="specs-table">
+            <tr><td colspan="2" class="specs-table__heading">Minimum</td></tr>
+            <tr><th>OS</th><td>Windows 10 (64-bit)</td></tr>
+            <tr><th>CPU</th><td>Intel i3-6300 / AMD FX-4350</td></tr>
+            <tr><th>GPU</th><td>NVIDIA GT 640 / AMD Radeon HD 7730</td></tr>
+            <tr><th>RAM</th><td>6 GB</td></tr>
+            <tr><td colspan="2" class="specs-table__heading">Recommended</td></tr>
+            <tr><th>CPU</th><td>Intel i5-3570T / AMD Ryzen 5</td></tr>
+            <tr><th>GPU</th><td>NVIDIA GTX 970 / AMD RX 580</td></tr>
+            <tr><th>RAM</th><td>8 GB</td></tr>
+          </table>
+        </div>
+        <div class="sidebar-card">
+          <h3 class="sidebar-card__title">📋 Article Info</h3>
+          <table class="specs-table">
+            <tr><th>Published</th><td>February 25, 2026</td></tr>
+            <tr><th>Verified</th><td style="color:var(--success);">✓ Community Tested</td></tr>
+            <tr><th>Difficulty</th><td>Intermediate</td></tr>
+            <tr><th>Time</th><td>~15 minutes</td></tr>
+          </table>
+        </div>
+      </aside>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand"><div class="footer__brand-logo"><a href="/"><img src="/logo.png" alt="JuztExplore"></a></div><p class="footer__brand-text">Your go-to resource for gaming troubleshooting guides.</p></div>
+        <div><h4 class="footer__heading">Quick Links</h4><ul class="footer__links"><li><a href="../index.html">Home</a></li><li><a href="../about.html">About Us</a></li><li><a href="../contact.html">Contact</a></li></ul></div>
+        <div><h4 class="footer__heading">Legal</h4><ul class="footer__links"><li><a href="../privacy-policy.html">Privacy Policy</a></li><li><a href="../terms.html">Terms</a></li></ul></div>
+        <div></div>
+      </div>
+      <div class="footer__bottom"><span>&copy; 2026 JuztExplore. All rights reserved.</span></div>
+      <p class="footer__disclaimer"><strong>Disclaimer:</strong> JuztExplore is an independent technical resource. All trademarks are the property of their respective owners.</p>
+    </div>
+  </footer>
+  <script src="../js/main.js"></script>
+</body>
+</html>

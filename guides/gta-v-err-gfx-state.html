@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>How to Fix ERR_GFX_STATE Error in GTA V — 2026 Guide | JuztExplore</title>
+  <meta name="description" content="Fix GTA V ERR_GFX_STATE error. Step-by-step guide to resolve this common DirectX graphics crash with driver updates and settings changes.">
+  <meta name="robots" content="index, follow">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Outfit:wght@600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="icon" type="image/png" href="/favicon.png">
+</head>
+<body>
+  <header class="header" id="header">
+    <div class="container header__inner">
+      <a href="../index.html" class="header__logo"><img src="/logo.png" alt="JuztExplore"></a>
+      <nav class="header__nav" id="main-nav"><a href="../index.html">Home</a><a href="../about.html">About</a><a href="../contact.html">Contact</a><a href="../privacy-policy.html">Privacy</a><a href="../terms.html">Terms</a></nav>
+      <button class="header__menu-toggle" id="menu-toggle" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+    </div>
+  </header>
+
+  <section class="guide-hero">
+    <div class="container">
+      <div class="guide-hero__breadcrumb"><a href="../index.html">Home</a> <span>›</span> <a href="../index.html">GTA V</a> <span>›</span> <span>ERR_GFX_STATE</span></div>
+      <div class="guide-hero__meta"><span class="badge">GTA V</span><span class="badge badge--danger">Graphics Error</span><span class="badge badge--success">✓ Verified Fix</span></div>
+      <h1 class="guide-hero__title">How to Fix ERR_GFX_STATE Error in GTA V — <span class="text-gradient">2026 Guide</span></h1>
+      <div class="guide-hero__quick-fix">
+        <div class="guide-hero__quick-fix-title">⚡ Quick Fix</div>
+        <p><strong>Switch GTA V from DirectX 11 to DirectX 10</strong> in Settings → Graphics. This single change fixes ERR_GFX_STATE for the majority of players.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="container">
+    <div class="guide-layout">
+      <article class="guide-content">
+        <h2>What Is ERR_GFX_STATE?</h2>
+        <p>ERR_GFX_STATE is a <strong>graphics pipeline crash</strong> in GTA V. It occurs when the game's renderer encounters a state it can't recover from — often caused by DirectX conflicts, MSAA settings, driver issues, or overlay software interfering with rendering.</p>
+
+        <h2>Step-by-Step Fix</h2>
+
+        <div class="step-block">
+          <div class="step-block__number">1</div>
+          <h3 class="step-block__title">Switch DirectX Version</h3>
+          <p class="step-block__text">In GTA V: <strong>Settings → Graphics → DirectX Version</strong> — switch from DX11 to <strong>DX10</strong> (or vice versa). Also try switching between Vulkan and DX11 if available. Restart the game after changing.</p>
+        </div>
+
+        <div class="step-block">
+          <div class="step-block__number">2</div>
+          <h3 class="step-block__title">Disable MSAA</h3>
+          <p class="step-block__text">MSAA (Multisample Anti-Aliasing) is a common trigger for this error. Go to <strong>Settings → Graphics → MSAA</strong> and set it to <strong>Off</strong>. You can use FXAA instead if you still want anti-aliasing.</p>
+        </div>
+
+        <div class="step-block">
+          <div class="step-block__number">3</div>
+          <h3 class="step-block__title">Update GPU Drivers</h3>
+          <p class="step-block__text">Download and install the latest GPU drivers. Use the <strong>clean install</strong> option. If you're on a very new driver that introduced the issue, try <strong>rolling back to a previous stable version</strong>.</p>
+        </div>
+
+        <div class="step-block">
+          <div class="step-block__number">4</div>
+          <h3 class="step-block__title">Disable Overlays</h3>
+          <p class="step-block__text">Discord, Steam, NVIDIA GeForce Experience, and Xbox Game Bar overlays can conflict with GTA V's renderer:</p>
+          <ul style="margin-top:0.75rem;padding-left:1.25rem;">
+            <li><strong>Discord:</strong> Settings → Game Overlay → Disable</li>
+            <li><strong>Steam:</strong> Right-click GTA V → Properties → Disable Steam Overlay</li>
+            <li><strong>GeForce Experience:</strong> Settings → Disable In-Game Overlay</li>
+            <li><strong>Windows:</strong> Settings → Gaming → Disable Xbox Game Bar</li>
+          </ul>
+        </div>
+
+        <div class="step-block">
+          <div class="step-block__number">5</div>
+          <h3 class="step-block__title">Delete GTA V Settings File</h3>
+          <p class="step-block__text">Corrupted graphics settings can cause persistent crashes. Delete the settings file to reset to defaults:</p>
+          <div class="step-block__code">C:\Users\[YourName]\Documents\Rockstar Games\GTA V\settings.xml</div>
+          <p class="step-block__text" style="margin-top:0.75rem;">The game will recreate this file with default settings on next launch.</p>
+        </div>
+
+        <div class="pro-tip">
+          <div class="pro-tip__title">💎 Pro Tip</div>
+          <p>GTA V is notoriously heavy on VRAM. If you have a 4GB VRAM GPU, keep Texture Quality at Normal and avoid MSAA entirely. For 6GB+ GPUs, you can safely use higher textures, but keep an eye on the VRAM usage bar in the Graphics settings. A <strong>modern 8GB VRAM GPU</strong> eliminates most GTA V graphics issues entirely.</p>
+        </div>
+      </article>
+
+      <aside class="guide-sidebar">
+        <div class="sidebar-card">
+          <h3 class="sidebar-card__title">🖥️ GTA V System Requirements</h3>
+          <table class="specs-table">
+            <tr><td colspan="2" class="specs-table__heading">Minimum</td></tr>
+            <tr><th>OS</th><td>Windows 10 (64-bit)</td></tr>
+            <tr><th>CPU</th><td>Intel Core 2 Quad Q6600 / AMD Phenom 9850</td></tr>
+            <tr><th>GPU</th><td>NVIDIA 9800 GT 1GB / AMD HD 4870 1GB</td></tr>
+            <tr><th>RAM</th><td>4 GB</td></tr>
+            <tr><td colspan="2" class="specs-table__heading">Recommended</td></tr>
+            <tr><th>CPU</th><td>Intel i5-3470 / AMD Ryzen 3 1200</td></tr>
+            <tr><th>GPU</th><td>NVIDIA GTX 1060 / AMD RX 580</td></tr>
+            <tr><th>RAM</th><td>8 GB</td></tr>
+          </table>
+        </div>
+        <div class="sidebar-card">
+          <h3 class="sidebar-card__title">📋 Article Info</h3>
+          <table class="specs-table">
+            <tr><th>Published</th><td>February 22, 2026</td></tr>
+            <tr><th>Verified</th><td style="color:var(--success);">✓ Community Tested</td></tr>
+            <tr><th>Difficulty</th><td>Beginner</td></tr>
+            <tr><th>Time</th><td>~5 minutes</td></tr>
+          </table>
+        </div>
+      </aside>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand"><div class="footer__brand-logo"><a href="/"><img src="/logo.png" alt="JuztExplore"></a></div><p class="footer__brand-text">Your go-to resource for gaming troubleshooting guides.</p></div>
+        <div><h4 class="footer__heading">Quick Links</h4><ul class="footer__links"><li><a href="../index.html">Home</a></li><li><a href="../about.html">About Us</a></li><li><a href="../contact.html">Contact</a></li></ul></div>
+        <div><h4 class="footer__heading">Legal</h4><ul class="footer__links"><li><a href="../privacy-policy.html">Privacy Policy</a></li><li><a href="../terms.html">Terms</a></li></ul></div>
+        <div></div>
+      </div>
+      <div class="footer__bottom"><span>&copy; 2026 JuztExplore. All rights reserved.</span></div>
+      <p class="footer__disclaimer"><strong>Disclaimer:</strong> JuztExplore is an independent technical resource. All trademarks are the property of their respective owners.</p>
+    </div>
+  </footer>
+  <script src="../js/main.js"></script>
+</body>
+</html>

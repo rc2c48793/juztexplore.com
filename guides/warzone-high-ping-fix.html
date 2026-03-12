@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>How to Fix High Ping in Warzone — 2026 | JuztExplore</title>
+  <meta name="description" content="Fix high ping and lag in Warzone with DNS, Ethernet, and network optimization. Step-by-step 2026 guide.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Outfit:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="icon" type="image/png" href="/favicon.png">
+</head>
+<body>
+  <header class="header" id="header">
+    <div class="container header__inner">
+      <a href="../index.html" class="header__logo"><img src="/logo.png" alt="JuztExplore"></a>
+      <nav class="header__nav" id="main-nav"><a href="../index.html">Home</a><a href="../about.html">About</a><a href="../contact.html">Contact</a><a href="../privacy-policy.html">Privacy</a><a href="../terms.html">Terms</a></nav>
+      <button class="header__menu-toggle" id="menu-toggle" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+    </div>
+  </header>
+
+  <section class="guide-hero">
+    <div class="container">
+      <div class="guide-hero__breadcrumb"><a href="../index.html">Home</a> <span>›</span> <a href="../index.html">Warzone</a> <span>›</span> <span>High Ping Fix</span></div>
+      <div class="guide-hero__meta"><span class="badge">Warzone</span><span class="badge badge--warning">Network</span><span class="badge badge--success">✓ Verified</span></div>
+      <h1 class="guide-hero__title">How to Fix High Ping &amp; Lag in Warzone — <span class="text-gradient">2026 Guide</span></h1>
+      <div class="guide-hero__quick-fix">
+        <div class="guide-hero__quick-fix-title">⚡ Quick Fix</div>
+        <p><strong>Switch to wired Ethernet and change DNS to 8.8.8.8 / 1.1.1.1.</strong> This alone can drop ping by 20–50ms.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="container">
+    <div class="guide-layout">
+      <article class="guide-content">
+        <h2>Why Is My Ping So High?</h2>
+        <p>High ping in Warzone is caused by <strong>Wi-Fi instability, slow DNS, background downloads, ISP throttling, or distant servers</strong>.</p>
+
+        <h2>Step-by-Step Fix</h2>
+
+        <div class="step-block">
+          <div class="step-block__number">1</div>
+          <h3 class="step-block__title">Use a Wired Connection</h3>
+          <p class="step-block__text">Wi-Fi adds latency and packet loss. Connect via <strong>Ethernet cable</strong> directly to your router. For long distances, use a <strong>Powerline adapter</strong>.</p>
+        </div>
+
+        <div class="step-block">
+          <div class="step-block__number">2</div>
+          <h3 class="step-block__title">Change DNS Servers</h3>
+          <p class="step-block__text">Go to <strong>Network Settings → IPv4 → Properties</strong>. Set DNS to <strong>8.8.8.8 / 8.8.4.4</strong> (Google) or <strong>1.1.1.1 / 1.0.0.1</strong> (Cloudflare).</p>
+        </div>
+
+        <div class="step-block">
+          <div class="step-block__number">3</div>
+          <h3 class="step-block__title">Close Background Apps</h3>
+          <p class="step-block__text">Pause downloads, close streaming apps (Netflix, YouTube), disable cloud sync (OneDrive, Dropbox), and limit other devices on your network.</p>
+        </div>
+
+        <div class="step-block">
+          <div class="step-block__number">4</div>
+          <h3 class="step-block__title">Enable QoS on Router</h3>
+          <p class="step-block__text">Log into your router and find QoS settings. Prioritize your PC or Warzone ports (<strong>TCP/UDP: 3074</strong>).</p>
+        </div>
+
+        <div class="step-block">
+          <div class="step-block__number">5</div>
+          <h3 class="step-block__title">Flush DNS and Reset Network</h3>
+          <p class="step-block__text">Run in CMD (Admin):</p>
+          <div class="step-block__code">ipconfig /flushdns<br>netsh winsock reset</div>
+        </div>
+
+        <div class="pro-tip">
+          <div class="pro-tip__title">💎 Pro Tip</div>
+          <p>Upgrade to a <strong>Wi-Fi 6E router</strong> if wireless is your only option. If available, switch to a <strong>fiber ISP connection</strong> — going from 30–60ms (cable) to 5–15ms (fiber) is game-changing for competitive shooters.</p>
+        </div>
+      </article>
+
+      <aside class="guide-sidebar">
+        <div class="sidebar-card">
+          <h3 class="sidebar-card__title">🖥️ Network Requirements</h3>
+          <table class="specs-table">
+            <tr><th>Connection</th><td>Wired Ethernet</td></tr>
+            <tr><th>Bandwidth</th><td>25+ Mbps</td></tr>
+            <tr><th>Ping</th><td>&lt; 50ms ideal</td></tr>
+            <tr><th>Ports (TCP)</th><td>3074</td></tr>
+            <tr><th>Ports (UDP)</th><td>3074, 3478-3480</td></tr>
+          </table>
+        </div>
+        <div class="sidebar-card">
+          <h3 class="sidebar-card__title">📋 Article Info</h3>
+          <table class="specs-table">
+            <tr><th>Published</th><td>February 18, 2026</td></tr>
+            <tr><th>Verified</th><td style="color:var(--success);">✓ Tested</td></tr>
+            <tr><th>Time</th><td>~10 minutes</td></tr>
+          </table>
+        </div>
+      </aside>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__bottom"><span>&copy; 2026 JuztExplore. All rights reserved.</span></div>
+      <p class="footer__disclaimer"><strong>Disclaimer:</strong> JuztExplore is an independent technical resource. All trademarks are the property of their respective owners.</p>
+    </div>
+  </footer>
+  <script src="../js/main.js"></script>
+</body>
+</html>
