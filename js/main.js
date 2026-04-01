@@ -1,4 +1,4 @@
-// ===== JuztExplore Main JS =====
+// ===== fomovibez.com Main JS =====
 
 document.addEventListener('DOMContentLoaded', () => {
   initMobileMenu();
